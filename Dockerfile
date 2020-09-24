@@ -11,3 +11,5 @@ RUN apt update
 RUN apt install nginx -y
 
 expose 80
+
+CMD ["nginx", "-g", "daemon off;"]
